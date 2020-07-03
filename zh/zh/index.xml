@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>我的紀錄</title>
+    <link>https://q2a3z.github.io/zh/zh/</link>
+    <description>Recent content on 我的紀錄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 19 Oct 2019 11:44:14 +0900</lastBuildDate>
+    
+        <atom:link href="https://q2a3z.github.io/zh/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>發文紀錄</title>
+        <link>https://q2a3z.github.io/zh/zh/archive/</link>
+        <pubDate>Sat, 19 Oct 2019 11:44:14 +0900</pubDate>
+        
+        <atom:modified>Sat, 19 Oct 2019 11:44:14 +0900</atom:modified>
+        <guid>https://q2a3z.github.io/zh/zh/archive/</guid>
+        <description></description>
+        
+        <dc:creator>江</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>關於我</title>
+        <link>https://q2a3z.github.io/zh/zh/about/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <atom:modified>Thu, 28 Feb 2019 00:00:00 +0000</atom:modified>
+        <guid>https://q2a3z.github.io/zh/zh/about/</guid>
+        <description>我是一個從台灣到日本打拼的工程師。 最近想說把之前的做過的專案跟代碼做一下整理，並想開始使用Blog來做整理。 想說是否能順便用在日本求職的PR</description>
+        
+        <dc:creator>江</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Posts</title>
+        <link>https://q2a3z.github.io/zh/zh/posts/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        
+        <guid>https://q2a3z.github.io/zh/zh/posts/</guid>
+        <description></description>
+        
+        <dc:creator>Hugo Authors</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

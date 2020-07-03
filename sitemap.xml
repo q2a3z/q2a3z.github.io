@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://q2a3z.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-06-28T14:31:14+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://q2a3z.github.io/jp/sitemap.xml</loc>
+		
+	   	<lastmod>2020-06-28T14:31:14+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://q2a3z.github.io/zh/sitemap.xml</loc>
+		
+	   	<lastmod>2020-06-28T14:31:14+09:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>
