@@ -65,13 +65,13 @@
       </item>
       
       <item>
-        <title>Bloggerの多言語の設定方法</title>
+        <title>Hugoの設定方法</title>
         <link>https://q2a3z.github.io/jp/posts/hugo_zzo_manul/</link>
         <pubDate>Sun, 28 Jun 2020 14:31:14 +0900</pubDate>
         
         <atom:modified>Sun, 28 Jun 2020 14:31:14 +0900</atom:modified>
         <guid>https://q2a3z.github.io/jp/posts/hugo_zzo_manul/</guid>
-        <description></description>
+        <description>前の頃一度Bloggerで多言語のブログをかきましたが、その書き方とメンテナンスは面倒なんです。 その後Github.ioがhtmlやCSSな</description>
         
         <dc:creator>me</dc:creator>
         
@@ -81,6 +81,10 @@
           
             
               <category>multi-language</category>
+            
+          
+            
+              <category>Zzo</category>
             
           
         
@@ -94,7 +98,7 @@
         
           
             
-              <category>Blogger</category>
+              <category>Hugo</category>
             
           
         

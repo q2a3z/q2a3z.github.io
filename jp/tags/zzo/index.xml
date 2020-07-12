@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Zzo on コーディングの記録</title>
+    <link>https://q2a3z.github.io/jp/tags/zzo/</link>
+    <description>Recent content in Zzo on コーディングの記録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>jp</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 14:31:14 +0900</lastBuildDate>
+    
+        <atom:link href="https://q2a3z.github.io/jp/tags/zzo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Hugoの設定方法</title>
+        <link>https://q2a3z.github.io/jp/posts/hugo_zzo_manul/</link>
+        <pubDate>Sun, 28 Jun 2020 14:31:14 +0900</pubDate>
+        
+        <atom:modified>Sun, 28 Jun 2020 14:31:14 +0900</atom:modified>
+        <guid>https://q2a3z.github.io/jp/posts/hugo_zzo_manul/</guid>
+        <description>前の頃一度Bloggerで多言語のブログをかきましたが、その書き方とメンテナンスは面倒なんです。 その後Github.ioがhtmlやCSSな</description>
+        
+        <dc:creator>me</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>multi-language</category>
+            
+          
+            
+              <category>Zzo</category>
+            
+          
+        
+        
+          
+            
+              <category>Setting</category>
+            
+          
+        
+        
+          
+            
+              <category>Hugo</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

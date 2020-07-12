@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bloggerの多言語の設定方法 – コーディングの記録</title>
+    <title>Hugoの設定方法 – コーディングの記録</title>
     
 
 
@@ -1209,10 +1209,10 @@
 
 
     
-<meta name="description" content="Bloggerの多言語の設定方法" />
+<meta name="description" content="Hugoの使うとZzoテーマの多言語の設定方法" />
 
 
-<meta name="keywords" content="multi-language">
+<meta name="keywords" content="multi-language,Zzo">
 
 <meta name="created" content="2020-06-28T14:31:14&#43;0900">
 <meta name="modified" content="2020-06-28T14:31:14&#43;0900">
@@ -1223,10 +1223,10 @@
 
 
 <meta property="og:site_name" content="コーディングの記録">
-<meta property="og:title" content="Bloggerの多言語の設定方法">
+<meta property="og:title" content="Hugoの設定方法">
 <meta property="og:url" content="https://q2a3z.github.io/jp/posts/hugo_zzo_manul/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Bloggerの多言語の設定方法">
+<meta property="og:description" content="Hugoの使うとZzoテーマの多言語の設定方法">
 
 <meta name="generator" content="Hugo 0.73.0" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1263,12 +1263,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Bloggerの多言語の設定方法",
+    "headline": "Hugoの設定方法",
     "datePublished": "2020-06-28T14:31:14+09:00",
     "dateModified": "2020-06-28T14:31:14+09:00",
     "url" : "https://q2a3z.github.io/jp/posts/hugo_zzo_manul/",
-    "description": "Bloggerの多言語の設定方法",
-    "keywords": ["multi-language"],
+    "description": "Hugoの使うとZzoテーマの多言語の設定方法",
+    "keywords": ["multi-language","Zzo"],
     "author": {
       "@type": "Person",
       "name": "me"
@@ -1552,7 +1552,7 @@
   
   <li  class="is-active" >
     
-      <span>Bloggerの多言語の設定方法</span>
+      <span>Hugoの設定方法</span>
     
   </li>
   
@@ -1564,13 +1564,13 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Bloggerの多言語の設定方法</h2>
+    <h2 class="single__title" data-ani="true">Hugoの設定方法</h2>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="書かれた">📅&nbsp;2020年06月28日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="読み時間"> ☕&nbsp;0&nbsp;分 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="読み時間"> ☕&nbsp;4&nbsp;分 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🐧&nbsp;me</span>
   
@@ -1586,11 +1586,226 @@
 
   <li><a href="https://q2a3z.github.io/jp/tags/multi-language/" class="single__tag" title="multi-language">#multi-language</a></li>
 
+  <li><a href="https://q2a3z.github.io/jp/tags/zzo/" class="single__tag" title="Zzo">#Zzo</a></li>
+
 </ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
+      <p>前の頃一度Bloggerで多言語のブログをかきましたが、その書き方とメンテナンスは面倒なんです。</p>
+<p>その後Github.ioがhtmlやCSSなどで静的サイトを作れるのを見つけました。この静的サイトはブログやGithubのプロジェクトなど展示できますので、ここに移転します。</p>
+<p>そして<a href="https://hexo.io/zh-tw/docs/">hexo</a>や<a href="https://gohugo.io/">Hugo</a>などサイト作成ツールを使って<a href="https://daringfireball.net/projects/markdown/">Markdown</a>ファイルでサイトを作れます。</p>
+<h2 id="hexo-vs-hugo">hexo vs Hugo</h2>
+<p>最初に<a href="https://hexo.io/zh-tw/docs/">hexo</a>を使いました、それは<a href="https://gohugo.io/">Hugo</a>と同じのようでテーマを導入して、<a href="https://daringfireball.net/projects/markdown/">Markdown</a>で静的サイトを作成できます。しかし、hexoは多言語に対応するのは<a href="https://www.npmjs.com/package/hexo-generator-i18n">i18n</a>というツールが必要なんですが、作成したサイトはメインページの言語しか変更できません。もしくは2つ(以上)のhexoを使って、2つ(以上)の言語を作れます。その後Hugoを見つけました、hexoの方法の作り方とメンテナンスはとっても面倒だから、Hugoに変更しました。Hugoはhexoより多言語の変更はしやすいで、サイトの作り方とhugoは同じようでMarkdownを使います。</p>
+<h2 id="hugoの設定">Hugoの設定</h2>
+<p><a href="https://gohugo.io/getting-started/installing/">公式サイト</a>の説明の通りに、下記には一部で記事します。</p>
+<h3 id="1gitをインストール">1.gitをインストール</h3>
+
+<div id="8611041887ef7b8d" class="tab">
+  <div class="tab__links">
+    
+      <button class="tab__link" aria-label="Tab link">Windows</button>
+    
+      <button class="tab__link" aria-label="Tab link">MacOS</button>
+    
+      <button class="tab__link" aria-label="Tab link">Ubuntu</button>
+    
+  </div>
+  
+  
+<div id="89865b40c2e526c0" class="tab__content">
+  <h3 id="windows-10">Windows 10</h3>
+<p><a href="https://git-scm.com/download/win">git</a>の公式サイトより、インストーラーをダウンロードする。
+</div>
+  
+<div id="8ef86a59d8dca5ab" class="tab__content">
+  <h3 id="macos-section">MacOS section</h3>
+<p>Homebrewで下記のコマンドでインストールする。</p>
+<p><code>brew install git</code></p>
+
+</div>
+  
+<div id="fe8c67f07bc31f41" class="tab__content">
+  <h3 id="ubuntu-section">Ubuntu section</h3>
+<p>Homebrewで下記のコマンドでインストールする。</p>
+<p><code>brew install git</code></p>
+
+</div>
+
+</div>
+
+<script>
+  'use strict';
+
+  var containerId = JSON.parse("\"8611041887ef7b8d\"");
+  var containerElem = document.getElementById(containerId);
+  var tabLinks = null;
+  var tabContents = null;
+  var ids = [];
+
+  if (containerElem) {
+    tabLinks = containerElem.querySelectorAll('.tab__link');
+    tabContents = containerElem.querySelectorAll('.tab__content');
+  }
+
+  for (var i = 0; i < tabContents.length; i++) {
+    ids = ids.concat(tabContents[i].getAttribute('id'));
+    tabContents[i].style.display = 'none';
+
+    if (0 === parseInt(i, 10) && !tabContents[i].classList.contains('active')) {
+      tabContents[i].classList.add('active');
+    }
+  }
+
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].setAttribute('id', ids[i]);
+
+    if (0 === parseInt(i, 10) && !tabLinks[i].classList.contains('active')) {
+      tabLinks[i].classList.add('active');
+    } else {
+      tabLinks[i].classList.remove('active');
+    }
+  }
+
+  if (tabContents.length > 0) {
+    tabContents[0].style.display = 'block';
+  }
+</script>
+<p>正しくインストールされているかとうか、下記のコマンドで確認します。</p>
+<p><code>git --version</code></p>
+<p>正しくインストールされていたのはgitのバージョンを表示します。</p>
+<h3 id="2hugoをインストール">2.Hugoをインストール</h3>
+
+<div id="711742808487f198" class="tab">
+  <div class="tab__links">
+    
+      <button class="tab__link" aria-label="Tab link">Windows</button>
+    
+      <button class="tab__link" aria-label="Tab link">MacOS</button>
+    
+      <button class="tab__link" aria-label="Tab link">Ubuntu</button>
+    
+  </div>
+  
+  
+<div id="500b2cfd9812222a" class="tab__content">
+  <h3 id="windows-10">Windows 10</h3>
+<p>先に<code>C:\Hugo\Sites</code>に公式GIthubの<a href="https://github.com/gohugoio/hugo/releases">Release</a>のページから<code>hugo.exe</code>を設置して、その後環境変数の<code>PATH</code>に上記の<code>hugo.exe</code>を追加します。
+</div>
+  
+<div id="a66a48bbf69916c4" class="tab__content">
+  <h3 id="macos-section">MacOS section</h3>
+<p>Homebrewで下記のコマンドでインストールする。</p>
+<p><code>brew install hugo</code></p>
+
+</div>
+  
+<div id="3bcfc9b20eb08719" class="tab__content">
+  <h3 id="ubuntu-section">Ubuntu section</h3>
+<p>Homebrewで下記のコマンドでインストールする。</p>
+<p><code>brew install hugo</code></p>
+
+</div>
+
+</div>
+
+<script>
+  'use strict';
+
+  var containerId = JSON.parse("\"711742808487f198\"");
+  var containerElem = document.getElementById(containerId);
+  var tabLinks = null;
+  var tabContents = null;
+  var ids = [];
+
+  if (containerElem) {
+    tabLinks = containerElem.querySelectorAll('.tab__link');
+    tabContents = containerElem.querySelectorAll('.tab__content');
+  }
+
+  for (var i = 0; i < tabContents.length; i++) {
+    ids = ids.concat(tabContents[i].getAttribute('id'));
+    tabContents[i].style.display = 'none';
+
+    if (0 === parseInt(i, 10) && !tabContents[i].classList.contains('active')) {
+      tabContents[i].classList.add('active');
+    }
+  }
+
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].setAttribute('id', ids[i]);
+
+    if (0 === parseInt(i, 10) && !tabLinks[i].classList.contains('active')) {
+      tabLinks[i].classList.add('active');
+    } else {
+      tabLinks[i].classList.remove('active');
+    }
+  }
+
+  if (tabContents.length > 0) {
+    tabContents[0].style.display = 'block';
+  }
+</script>
+<p>正しくインストールされているかとうか、下記のコマンドで確認します。</p>
+<p><code>hugo version</code></p>
+<p>正しくインストールされていたのはgitのバージョンを表示します。</p>
+<h3 id="3初めてhugoを使う">3.初めてHugoを使う</h3>
+<p><a href="https://gohugo.io/getting-started/quick-start/">公式スタートのガイド</a></p>
+<h4 id="31サイトを作ろ">3.1サイトを作ろ</h4>
+<p><code>hugo new site quickstart</code></p>
+<p>Hugoで<strong>quickstart</strong> フォルダーにサイトを作ります</p>
+<h4 id="32-zzoテーマを導入">3.2 Zzoテーマを導入</h4>
+<pre><code>cd quickstart
+git init
+git clone https://github.com/zzossig/hugo-theme-zzo.git themes/zzo
+</code></pre><p><strong>quickstart</strong> フォルダーに移動して、<strong>git</strong> で <em>zzo</em>テーマを<strong>themes</strong>フォルダーにダウンロードします。</p>
+<h4 id="33テスト">3.3テスト</h4>
+<h5 id="331">3.3.1</h5>
+<p><code>themes/zzo/exampleSite</code>の中のファイルを<strong>quickstart</strong> フォルダーにコピーして、下記のコマンドを実行します。<br />
+<code>hugo server</code></p>
+<h5 id="332">3.3.2</h5>
+<p>又はexampleSiteをテストします。下記のコマンドを実行します。</p>
+<p><code>hugo server --themesDir themes/zzo/exampleSite</code></p>
+<p>その後ブラウザで</p>
+<p><code>http://localhost:1313/</code>にアクセスして、テストサイトが見えます。</p>
+<h2 id="githubユーザサイト">Githubユーザサイト</h2>
+<p>Githubは<a href="https://pages.github.com/">Github Page</a>というサービスを提供しています，そこで<strong>ユーザサイト</strong>と<strong>プロジェクトサイト</strong>設置できます。</p>
+<h3 id="1githubioの設定">1.Github.ioの設定</h3>
+<p>先ず新たのリポジトリを作成します。</p>
+
+
+<figure >
+  
+    <img data-src="/images/Hugo_Zzo_manul/github_new.png" alt="image alt" data-caption="リポジトリを作成する" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='500px' height='500px' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:500px;height:500px;"/>
+    
+  
+    <figcaption style="text-align: center;">
+    <strong>Github</strong>:
+    
+    リポジトリを作成する
+    
       
+      
+    
+  </figcaption>
+  
+</figure>
+
+<p>『Repository name』に必ず[username].github.ioを書きます。<strong>username</strong>は自分のアカウントです。</p>
+<h3 id="2アップロードサイト">2.アップロードサイト</h3>
+<p>先に言ったの<strong>quickstart</strong> のフォルダーにターミナルでコマンド<code>hugo</code>を実行して、<strong>public</strong>というのサイトのフォルダーを作成します。</p>
+<p>その後gitで<strong>public</strong>フォルダーをアップロードします。</p>
+<pre><code>git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/q2a3z/[username].github.io.git
+git push -u origin master
+</code></pre><p><a href="">githubコマンドの說明</a></p>
+<blockquote>
+<p><a href="https://wm4n.github.io/Hexo-NexT-%E5%90%8C%E6%99%82%E6%94%AF%E6%8F%B4%E5%A4%9A%E8%AA%9E%E7%B3%BB/">Hexo &amp; NexT - 同時支援多語系</a><br />
+<a href="https://zhuanlan.zhihu.com/p/37752930">如何使用Hugo在GitHub Pages上搭建免费个人网站</a></p>
+</blockquote>
+
     </article>
     
     <script>
@@ -2033,7 +2248,30 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hexo-vs-hugo">hexo vs Hugo</a></li>
+    <li><a href="#hugoの設定">Hugoの設定</a>
+      <ul>
+        <li><a href="#1gitをインストール">1.gitをインストール</a></li>
+        <li><a href="#2hugoをインストール">2.Hugoをインストール</a></li>
+        <li><a href="#3初めてhugoを使う">3.初めてHugoを使う</a>
+          <ul>
+            <li><a href="#31サイトを作ろ">3.1サイトを作ろ</a></li>
+            <li><a href="#32-zzoテーマを導入">3.2 Zzoテーマを導入</a></li>
+            <li><a href="#33テスト">3.3テスト</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#githubユーザサイト">Githubユーザサイト</a>
+      <ul>
+        <li><a href="#1githubioの設定">1.Github.ioの設定</a></li>
+        <li><a href="#2アップロードサイト">2.アップロードサイト</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </section>
 

@@ -87,6 +87,11 @@
     <lastmod>2020-06-28T14:31:14+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/series/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://q2a3z.github.io/en/series/hugo/"
                 />
@@ -250,6 +255,11 @@
   <url>
     <loc>https://q2a3z.github.io/zh/tags/zzo/</loc>
     <lastmod>2020-06-28T14:31:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/tags/zzo/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
