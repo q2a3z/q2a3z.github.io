@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 28 Jun 2020 14:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 23:59:29 +0900</lastBuildDate>
     
         <atom:link href="https://q2a3z.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,46 @@
         
       
 
+      
+      <item>
+        <title>於Unity應用MiniMax</title>
+        <link>https://q2a3z.github.io/zh/posts/unity_tic_minmax/</link>
+        <pubDate>Sun, 12 Jul 2020 23:59:29 +0900</pubDate>
+        
+        <atom:modified>Sun, 12 Jul 2020 23:59:29 +0900</atom:modified>
+        <guid>https://q2a3z.github.io/zh/posts/unity_tic_minmax/</guid>
+        <description>先前參考Unity 官方的教學實作了這個井字遊戲，但其只能用於雙人遊玩並沒有單人遊玩的模式。其後發現有一演算法是專門對於這種棋牌遊戲的就是Mi</description>
+        
+        <dc:creator>me</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>miniMax</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+          
+            
+              <category>Game_Dev</category>
+            
+          
+        
+        
+          
+            
+              <category>Unity</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Blogger多國語言導入方法</title>

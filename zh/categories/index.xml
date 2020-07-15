@@ -12,13 +12,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 28 Jun 2020 14:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 23:59:29 +0900</lastBuildDate>
     
         <atom:link href="https://q2a3z.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Game_Dev</title>
+        <link>https://q2a3z.github.io/zh/categories/game_dev/</link>
+        <pubDate>Sun, 12 Jul 2020 23:59:29 +0900</pubDate>
+        
+        
+        <guid>https://q2a3z.github.io/zh/categories/game_dev/</guid>
+        <description></description>
+        
+        <dc:creator>江</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Setting</title>

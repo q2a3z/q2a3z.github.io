@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://q2a3z.github.io/zh/</loc>
-    <lastmod>2020-06-28T14:31:14+09:00</lastmod>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="jp"
@@ -20,6 +20,146 @@
                 hreflang="zh"
                 href="https://q2a3z.github.io/zh/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/tags/ai/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/tags/ai/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/categories/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/categories/game_dev/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/categories/game_dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/categories/game_dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/tags/minimax/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/tags/minimax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/tags/minimax/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/posts/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/series/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/tags/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/series/unity/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://q2a3z.github.io/en/series/unity/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/series/unity/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://q2a3z.github.io/zh/posts/unity_tic_minmax/</loc>
+    <lastmod>2020-07-12T23:59:29+09:00</lastmod>
   </url>
   
   <url>
@@ -60,26 +200,6 @@
   <url>
     <loc>https://q2a3z.github.io/zh/posts/blogger_code_color/</loc>
     <lastmod>2020-06-28T14:31:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://q2a3z.github.io/zh/categories/</loc>
-    <lastmod>2020-06-28T14:31:14+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="https://q2a3z.github.io/jp/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://q2a3z.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://q2a3z.github.io/zh/categories/"
-                />
   </url>
   
   <url>
@@ -158,41 +278,6 @@
   </url>
   
   <url>
-    <loc>https://q2a3z.github.io/zh/posts/</loc>
-    <lastmod>2020-06-28T14:31:14+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="https://q2a3z.github.io/jp/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://q2a3z.github.io/zh/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://q2a3z.github.io/zh/series/</loc>
-    <lastmod>2020-06-28T14:31:14+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="https://q2a3z.github.io/jp/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://q2a3z.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://q2a3z.github.io/zh/series/"
-                />
-  </url>
-  
-  <url>
     <loc>https://q2a3z.github.io/zh/categories/setting/</loc>
     <lastmod>2020-06-28T14:31:14+09:00</lastmod>
     <xhtml:link
@@ -209,26 +294,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://q2a3z.github.io/zh/categories/setting/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://q2a3z.github.io/zh/tags/</loc>
-    <lastmod>2020-06-28T14:31:14+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="https://q2a3z.github.io/jp/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://q2a3z.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://q2a3z.github.io/zh/tags/"
                 />
   </url>
   
