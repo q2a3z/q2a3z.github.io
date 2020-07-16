@@ -11,9 +11,9 @@
 
 
 
-<script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
+<script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
-<script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
+<script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -1342,6 +1342,22 @@
           
         
           
+          
+            
+              
+                <a href="https://q2a3z.github.io/jp/posts/unity_tic_minmax/" data-lang="jp" class="dropdown-item">日本語</a>
+              
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
         
           
           
@@ -1445,6 +1461,22 @@
           
         
           
+          
+            
+              
+                <a href="https://q2a3z.github.io/jp/posts/unity_tic_minmax/" data-lang="jp" class="dropdown-item">日本語</a>
+              
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
         
           
           
@@ -1538,7 +1570,7 @@
 <div class="single__infos">
   <time class="single__info" title="創建日期">📅&nbsp;2020年07月12日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;1&nbsp;分鐘 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;2&nbsp;分鐘 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🐧&nbsp;me</span>
   
@@ -1563,26 +1595,7 @@
       <p>先前參考Unity 官方的<a href="https://learn.unity.com/tutorial/creating-a-tic-tac-toe-game-using-only-ui-components">教學</a>實作了這個井字遊戲，但其只能用於雙人遊玩並沒有單人遊玩的模式。其後發現有一演算法是專門對於這種棋牌遊戲的就是<a href="https://wikipedia.org/wiki/Minimax">MiniMax</a>。</p>
 <h2 id="minimax">MiniMax</h2>
 <p>MiniMax演算法是利用於雙人遊戲的一種演算法。其利用於<a href="https://wikipedia.org/wiki/Zero-sum_game">零和遊戲</a>(Zero-sum Game)也就是你輸我贏或是你贏我輸的遊戲。</p>
-<p>其概念就如下圖<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><br />
-
-
-<figure >
-  
-    <img data-src="/images/Unity_Tic_minMax/giphy.gif" alt="image alt" data-caption="minimax的二元樹架構" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='640px' height='480px' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:640px;height:480px;"/>
-    
-  
-    <figcaption style="text-align: center;">
-    <strong>MiniMax</strong>:
-    
-    minimax的二元樹架構
-    
-      
-      
-    
-  </figcaption>
-  
-</figure>
-</p>
+<p>其概念就如下圖<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 
 
 <figure >
@@ -1603,7 +1616,176 @@
 </figure>
 
 <p>假設自己為○(Max)，對手為Ｘ(Min)。並假設勝利時為1，敗北時為-1，平局時為0。不過由於井字遊戲的狀態樹算是很簡單的，所以可以將整個遊戲目前狀態底下所有結果的二元樹建構出來，一般如果像是其他如象棋、圍棋等結果較為龐大的遊戲是不可能這樣做。假設遊戲狀態如上圖所示，會依序把所有結果羅列出來，並將依其狀態回傳1、-1、0，回傳值只會於有結果時才會產生，所以如圖所示下一步為○，所以就須取<strong>最大值</strong>(Max)，反之在下一步為對方動作時則要取<strong>最小值</strong>(Min)。從勝利的結果反推回傳結果值。min和max分別為自己與對方動作時的情況。</p>
-<p>Unity程式碼<a href="https://github.com/q2a3z/Tic-Tac-Toe-Game-">Github</a></p>
+<h2 id="代碼">代碼</h2>
+<h3 id="minimax-1">Minimax</h3>
+<p><strong>isMaximizing</strong>是用來判斷是否為自己的回合也就是對自己有利的情況**(取最大值Max)**。**else**則為對方的回合**(取最小值Min)**。重複遞迴值到看到結果為止。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="kt">int</span> <span class="n">minimax</span><span class="p">(</span><span class="n">Text</span><span class="p">[]</span> <span class="n">buttonList</span><span class="p">,</span><span class="kt">int</span> <span class="n">depth</span><span class="p">,</span><span class="kt">bool</span> <span class="n">isMaximizing</span><span class="p">){</span>
+        <span class="kt">string</span> <span class="n">result</span> <span class="p">=</span> <span class="n">gameController</span><span class="p">.</span><span class="n">checkWinner</span><span class="p">();</span> 
+        <span class="k">if</span><span class="p">(</span><span class="n">result</span> <span class="p">!=</span> <span class="s">&#34;&#34;</span><span class="p">){</span>
+            <span class="k">return</span> <span class="n">scores</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+        <span class="p">}</span> 
+        <span class="k">if</span><span class="p">(</span><span class="n">isMaximizing</span><span class="p">){</span>
+           <span class="kt">int</span> <span class="n">bestScore</span> <span class="p">=</span> <span class="p">-</span><span class="m">1000</span><span class="p">;</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">9</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">==</span> <span class="s">&#34;&#34;</span><span class="p">){</span>
+                    <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;O&#34;</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">score</span> <span class="p">=</span> <span class="n">minimax</span><span class="p">(</span><span class="n">buttonList</span><span class="p">,(</span><span class="n">depth</span><span class="p">+</span><span class="m">1</span><span class="p">),</span><span class="k">false</span><span class="p">);</span>
+                    <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="p">&gt;</span> <span class="n">bestScore</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">bestScore</span> <span class="p">=</span> <span class="n">score</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="n">bestScore</span><span class="p">;</span> 
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>
+            <span class="kt">int</span> <span class="n">bestScore</span> <span class="p">=</span> <span class="m">1000</span><span class="p">;</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">9</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">==</span> <span class="s">&#34;&#34;</span><span class="p">){</span>
+                    <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;X&#34;</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">score</span> <span class="p">=</span> <span class="n">minimax</span><span class="p">(</span><span class="n">buttonList</span><span class="p">,(</span><span class="n">depth</span><span class="p">+</span><span class="m">1</span><span class="p">),</span><span class="k">true</span><span class="p">);</span>
+                    <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="p">&lt;</span> <span class="n">bestScore</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">bestScore</span> <span class="p">=</span> <span class="n">score</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span> 
+            <span class="k">return</span> <span class="n">bestScore</span><span class="p">;</span>
+        <span class="p">}</span>    
+    <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="scores">scores</h3>
+<p>此為比賽結束時，是獲勝或是輸，又或是平手。並將結果值回傳。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">private</span> <span class="kt">int</span> <span class="n">scores</span><span class="p">(</span><span class="kt">string</span> <span class="n">result</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">result</span> <span class="p">==</span> <span class="s">&#34;O&#34;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="m">10</span><span class="p">;</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">result</span> <span class="p">==</span> <span class="s">&#34;X&#34;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">-</span><span class="m">10</span><span class="p">;</span>
+        <span class="k">else</span>
+            <span class="k">return</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="best-move">Best Move</h3>
+<p><strong>bestMove</strong>就是最頂層的時候，會呼叫<strong>minimax</strong>來決定哪一步對自己有利。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">void</span> <span class="n">bestMove</span><span class="p">(){</span>
+        <span class="c1">// AI to make its turn
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">bestScore</span> <span class="p">=</span> <span class="p">-</span><span class="m">65535</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">move</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">9</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">==</span> <span class="s">&#34;&#34;</span><span class="p">){</span>
+               <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;O&#34;</span><span class="p">;</span>
+               <span class="kt">int</span> <span class="n">score</span> <span class="p">=</span> <span class="n">minimax</span><span class="p">(</span><span class="n">buttonList</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="k">false</span><span class="p">);</span>
+               <span class="n">buttonList</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+               <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="p">&gt;</span> <span class="n">bestScore</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="n">bestScore</span> <span class="p">=</span> <span class="n">score</span><span class="p">;</span>
+                  <span class="n">move</span> <span class="p">=</span> <span class="n">i</span><span class="p">;</span>
+               <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">buttonList</span><span class="p">[</span><span class="n">move</span><span class="p">].</span><span class="n">GetComponentInParent</span><span class="p">&lt;</span><span class="n">Button</span><span class="p">&gt;().</span><span class="n">interactable</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+        <span class="n">buttonList</span><span class="p">[</span><span class="n">move</span><span class="p">].</span><span class="n">text</span> <span class="p">=</span> <span class="n">gameController</span><span class="p">.</span><span class="n">GetPlayerSide</span><span class="p">();</span>
+        <span class="n">gameController</span><span class="p">.</span><span class="n">EndTurn</span><span class="p">();</span>
+    <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="結果">結果</h2>
+<p>
+
+<figure >
+  
+    <img data-src="/images/Unity_Tic_minMax/unity_ai_tic.gif" alt="image alt" data-caption="如minimax的二元樹架構一樣的結果" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='640px' height='480px' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:640px;height:480px;"/>
+    
+  
+    <figcaption style="text-align: center;">
+    <strong>成果圖</strong>:
+    
+    如minimax的二元樹架構一樣的結果
+    
+      
+      
+    
+  </figcaption>
+  
+</figure>
+<br />
+Unity程式碼<a href="https://github.com/q2a3z/Tic-Tac-Toe-Game-">Github</a></p>
 <blockquote>
 <p><a href="https://learn.unity.com/tutorial/creating-a-tic-tac-toe-game-using-only-ui-components">Unity-Creating a Tic-Tac-Toe Game Using Only UI Components</a><br />
 <a href="https://wikipedia.org/wiki/Minimax">Minimax_wikipedia</a></p>
@@ -2049,6 +2231,14 @@ document.addEventListener('DOMContentLoaded', function () {
     <nav id="TableOfContents">
   <ul>
     <li><a href="#minimax">MiniMax</a></li>
+    <li><a href="#代碼">代碼</a>
+      <ul>
+        <li><a href="#minimax-1">Minimax</a></li>
+        <li><a href="#scores">scores</a></li>
+        <li><a href="#best-move">Best Move</a></li>
+      </ul>
+    </li>
+    <li><a href="#結果">結果</a></li>
   </ul>
 </nav>
   </div>
@@ -2124,7 +2314,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<script defer src="/js/clipboard.min.c168d3a04c45a631be76437054619a4a3b30107960cb9730be96012fef5762b0.js"></script>
+<script defer src="/js/clipboard.min.1626706afc88d95ebe1173b553ec732c6dc82a576989315fdf5e7779af738a44.js"></script>
 
 <script defer src="/js/helper/getParents.min.js"></script>
 

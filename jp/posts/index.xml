@@ -12,13 +12,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 28 Jun 2020 14:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 23:59:29 +0900</lastBuildDate>
     
         <atom:link href="https://q2a3z.github.io/jp/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>UnityにMiniMaxを使用する</title>
+        <link>https://q2a3z.github.io/jp/posts/unity_tic_minmax/</link>
+        <pubDate>Sun, 12 Jul 2020 23:59:29 +0900</pubDate>
+        
+        <atom:modified>Sun, 12 Jul 2020 23:59:29 +0900</atom:modified>
+        <guid>https://q2a3z.github.io/jp/posts/unity_tic_minmax/</guid>
+        <description>以前Unityの公式チュートリアルを参照して、○×ゲームを作成しました。でもこの成果は二人以上しか遊びません。その後MiniMaxと言う演算</description>
+        
+        <dc:creator>me</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>miniMax</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+          
+            
+              <category>Game_Dev</category>
+            
+          
+        
+        
+          
+            
+              <category>Unity</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Bloggerの多言語の設定方法</title>

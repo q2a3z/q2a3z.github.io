@@ -27,6 +27,11 @@
     <lastmod>2020-07-12T23:59:29+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://q2a3z.github.io/en/tags/ai/"
                 />
@@ -62,6 +67,11 @@
     <lastmod>2020-07-12T23:59:29+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/categories/game_dev/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://q2a3z.github.io/en/categories/game_dev/"
                 />
@@ -75,6 +85,11 @@
   <url>
     <loc>https://q2a3z.github.io/zh/tags/minimax/</loc>
     <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/tags/minimax/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -147,6 +162,11 @@
     <lastmod>2020-07-12T23:59:29+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/series/unity/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://q2a3z.github.io/en/series/unity/"
                 />
@@ -160,6 +180,16 @@
   <url>
     <loc>https://q2a3z.github.io/zh/posts/unity_tic_minmax/</loc>
     <lastmod>2020-07-12T23:59:29+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://q2a3z.github.io/jp/posts/unity_tic_minmax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://q2a3z.github.io/zh/posts/unity_tic_minmax/"
+                />
   </url>
   
   <url>
